@@ -1,0 +1,19 @@
+time:--01/02/2023 14:06:49
+root:--/media/wellwork/9c91fb91-d2ec-49c6-9378-5049663e5586/code/DNANet/dataset/
+dataset:--NUAA-SIRST
+log_name:--RepISD_small_layer2
+model:--RepISD_small
+batch_size:--16
+crop_size:--256
+base_size:--256
+epochs:--1500
+start_epoch:--0
+num_workers:--2
+min_lr:--1e-05
+optimizer:--Adagrad
+scheduler:--CosineAnnealingLR
+lr:--0.05
+config:--c_pdc
+convert:--False
+deploy:--False
+save_dir:--NUAA-SIRST_RepISD_small_layer2_01_02_2023_14_06_49_wDS
