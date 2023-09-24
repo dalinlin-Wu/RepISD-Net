@@ -5,6 +5,7 @@ Our paper has been accepted by IEEE Transactions on Geoscience and Remote Sensin
 We will release more interesting works about lightweight networks on infrared small target detection.
 
 Welcome to keep following our repository.
+
 ![outline](overall_structure.jpg)
 
 ## Algorithm Introduction
