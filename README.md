@@ -1,10 +1,17 @@
 # Learning an Efficient Infrared Small Target Detection Network via Structural Re-parameterization
 
+Our paper has been accepted by IEEE Transactions on Geoscience and Remote Sensing.
+
+We will release more interesting works about lightweight networks on infrared small target detection.
+
+Welcome to keep following our repository.
 ![outline](overall_structure.jpg)
 
 ## Algorithm Introduction
 
 Learning an Efficient Infrared Small Target Detection Network via Structural Re-parameterization
+
+Authors: Shuanglin Wu, Chao Xiao, Longguang Wang, Yingqian Wang, Jungang Yang, Wei An.
 
 We propose a powerful yet efficient network (RepISD-Net) for infrared small target detection to achieve high detection performance with a fast inference speed. 
 Experiments on three public (e.g., NUAA-SIRST, NUDT-SIRST, and IRSTD-1k) datasets demonstrate the effectiveness and efficiency of our method. 
@@ -16,6 +23,7 @@ The contribution of this paper are as follows:
 
 3. Compared with other SOTA methods, our RepISD-Net can achieve comparable or even better detection performance with significantly accelerated inference speed.
 
+![outline](FPS.png)
 
 ## Prerequisite
 * Tested on Ubuntu 20.04, with Python 3.8, PyTorch 1.12, Torchvision 0.13.1, CUDA 11.7, and 1x NVIDIA 3090.
@@ -70,26 +78,26 @@ python demo.py  --img_demo_dir demo_img  --img_demo_index Misc_413
 
 on NUAA-SIRST
 
-| Model            | IoU (x10(-2)) | Pd (x10(-2)) | Fa (x10(-6)) ||
-|------------------|---------------|--------------|--------------|:----:|
+| Model            | IoU (%) | Pd (%) | Fa (x10(-6)) |
+|------------------|---------------|--------------|--------------|
 | RepISD-Net    | 77.81         | 100.00       | 4.22         |
 
 on NUDT-SIRST
 
-| Model            | IoU (x10(-2)) | Pd (x10(-2)) | Fa (x10(-6)) ||
-|------------------|---------------|--------------|--------------|:----:|
+| Model            | IoU (%) | Pd (%) | Fa (x10(-6)) |
+|------------------|---------------|--------------|--------------|
 | RepISD-Net    | 89.44         | 98.65        | 6.18         |
 
 on IRSTD-1k
 
-| Model            | IoU (x10(-2)) | Pd (x10(-2)) | Fa (x10(-6)) ||
-|------------------|---------------|--------------|--------------|:----:|
+| Model            | IoU (%) | Pd (%) | Fa (x10(-6)) |
+|------------------|---------------|--------------|--------------|
 | RepISD-Net    | 65.45         | 91.59        | 7.62         |
 
 model efficiency
 
-| Model            | #Params(M) | FLOPs | FPS    ||
-|------------------|:----------:|-------|--------|:----:|
+| Model            | #Params(M) | FLOPs(G) | FPS    |
+|------------------|:----------:|-------|--------|
 | RepISD-Net    |    0.28    | 25.76 | 104.64 |
 
 Note that:
